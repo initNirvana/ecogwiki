@@ -209,7 +209,8 @@ var postprocessors = (function($) {
             return this.hasHashbang('mathjax');
         },
         dependencies: function() {
-            return ['http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'];
+           // return ['http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'];
+           return ['https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML'];
         },
         runBeforeDependencies: function() {
             if('MathJax' in window) return;
